@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D's Lessons</title>
+    <meta
+      name="description"
+      content="A growing collection of lessons, letters, and memories for a daughter."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="hero">
+        <p class="eyebrow">D's Lessons</p>
+        <h1>A diary of lessons, love, and little truths to keep forever.</h1>
+        <p class="hero-copy">
+          This is a living collection of notes for a daughter — small lessons,
+          kind reminders, family stories, and things worth carrying into the
+          future.
+        </p>
+        <nav class="hero-actions">
+          <a class="button button-primary" href="#lessons">Read lessons</a>
+          <a class="button button-secondary" href="admin/">Add a lesson</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="intro-card">
+          <h2>For every season of growing up</h2>
+          <p>
+            Some lessons are for today. Some are for years from now. Every page
+            here is a small gift — something to remember when life feels big,
+            beautiful, confusing, or new.
+          </p>
+        </section>
+
+        <section class="lessons-section" id="lessons">
+          <div class="section-heading">
+            <p class="section-kicker">Lesson archive</p>
+            <h2>Pages to revisit again and again</h2>
+          </div>
+          <div id="lesson-list" class="lesson-grid"></div>
+        </section>
+      </main>
+    </div>
+
+    <template id="lesson-card-template">
+      <article class="lesson-card">
+        <p class="lesson-meta"></p>
+        <h3><a class="lesson-link" href="#"></a></h3>
+        <p class="lesson-summary"></p>
+      </article>
+    </template>
+
+    <script src="script.js"></script>
+  </body>
+</html>
