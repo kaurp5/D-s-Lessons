@@ -1,0 +1,22 @@
+backend:
+  name: github
+  repo: kaurp5/D-s-Lessons
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "lessons"
+    label: "Lessons"
+    folder: "content/lessons/entries"
+    create: true
+    slug: "{{slug}}"
+    extension: "json"
+    format: "json"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false }
+      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Page path", name: "path", widget: "string", hint: "Example: lessons/my-new-lesson.html" }
+      - { label: "Body", name: "body", widget: "markdown" }
