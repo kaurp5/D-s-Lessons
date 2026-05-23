@@ -2,6 +2,10 @@ async function loadLessons() {
   const lessonList = document.getElementById('lesson-list');
   const template = document.getElementById('lesson-card-template');
 
+  if (!lessonList || !template) {
+    return;
+  }
+
   try {
     const response = await fetch('content/lessons/index.json', { cache: 'no-store' });
     if (!response.ok) throw new Error('Failed to load lessons');
